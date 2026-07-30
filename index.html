@@ -3,42 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Tradición Chaqueña | El Palmar Chico, Yacuiba</title>
+    <meta name="description" content="Rodeo y tradición chaqueña en El Palmar Chico, Yacuiba, Tarija - Bolivia. Doma, jineteada, costumbres del Chaco.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <header>
-        <h1>Bienvenido</h1>
-        <p>Esta es una página web sencilla creada con HTML y CSS.</p>
+    <header class="site-header">
+        <div class="logo">Tradición Chaqueña</div>
+        <nav class="main-nav">
+            <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#tradicion">La Tradición</a></li>
+                <li><a href="#rodeo">El Rodeo</a></li>
+                <li><a href="#programa">Programa</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#ubicacion">Ubicación</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Servicios</a>
-        <a href="#">Acerca de</a>
-        <a href="#">Contacto</a>
-    </nav>
-
     <main>
-        <section class="card">
-            <h2>Sobre Nosotros</h2>
-            <p>
-                Somos un ejemplo de una página web básica. Puedes modificar
-                este contenido para adaptarlo a tus necesidades.
-            </p>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">El Palmar Chico · Yacuiba · Tarija</p>
+                <h1>Tradición Chaqueña</h1>
+                <p class="hero-subtitle">Rodeo, doma y costumbres del Chaco boliviano, de generación en generación.</p>
+                <a href="#programa" class="btn-primary">Ver el programa</a>
+            </div>
         </section>
 
-        <section class="card">
-            <h2>Nuestros Servicios</h2>
-            <p>
-                Diseño web, desarrollo de aplicaciones y soporte técnico.
-            </p>
+        <!-- SOBRE LA TRADICIÓN -->
+        <section id="tradicion" class="tradicion">
+            <div class="section-header">
+                <span class="eyebrow">Nuestra historia</span>
+                <h2>La Tradición Chaqueña</h2>
+            </div>
+            <div class="tradicion-grid">
+                <div class="tradicion-texto">
+                    <p>
+                        En El Palmar Chico, la tierra colorada del Chaco guarda la memoria de generaciones
+                        de familias criollas que trabajaron a la par del ganado y el monte. Cada año, la
+                        comunidad se reúne para revivir esas costumbres: el arte de la doma, el sonido del
+                        acordeón, el sabor de la comida chaqueña y el orgullo de una identidad que se
+                        transmite de padres a hijos.
+                    </p>
+                </div>
+                <div class="tradicion-imagen">
+                    <img src="images/tradicion-placeholder.jpg" alt="Costumbres del Chaco en El Palmar Chico">
+                </div>
+            </div>
+        </section>
+
+        <!-- EL RODEO -->
+        <section id="rodeo" class="rodeo">
+            <div class="section-header">
+                <span class="eyebrow">La fiesta principal</span>
+                <h2>El Rodeo</h2>
+            </div>
+            <div class="rodeo-grid">
+                <article class="rodeo-card">
+                    <h3>Jineteada</h3>
+                    <p>Domadores criollos se miden con los mejores animales del Chaco en la pista de El Palmar.</p>
+                </article>
+                <article class="rodeo-card">
+                    <h3>Destrezas Criollas</h3>
+                    <p>Enlace, pial y otras pruebas que muestran la habilidad del hombre de campo.</p>
+                </article>
+                <article class="rodeo-card">
+                    <h3>Música y Danza</h3>
+                    <p>Chamamé, chacareras y el folklore que acompaña cada jornada del evento.</p>
+                </article>
+                <article class="rodeo-card">
+                    <h3>Comida Típica</h3>
+                    <p>Asado a la estaca, empanadas y los sabores propios de la cocina chaqueña.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- PROGRAMA -->
+        <section id="programa" class="programa">
+            <div class="section-header">
+                <span class="eyebrow">Agenda</span>
+                <h2>Programa del Evento</h2>
+            </div>
+            <ul class="programa-lista">
+                <li>
+                    <span class="programa-hora">09:00</span>
+                    <span class="programa-detalle">Apertura y desfile criollo</span>
+                </li>
+                <li>
+                    <span class="programa-hora">11:00</span>
+                    <span class="programa-detalle">Jineteada - primera ronda</span>
+                </li>
+                <li>
+                    <span class="programa-hora">13:00</span>
+                    <span class="programa-detalle">Almuerzo criollo y música en vivo</span>
+                </li>
+                <li>
+                    <span class="programa-hora">16:00</span>
+                    <span class="programa-detalle">Destrezas criollas y jineteada final</span>
+                </li>
+                <li>
+                    <span class="programa-hora">20:00</span>
+                    <span class="programa-detalle">Baile popular</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- GALERÍA -->
+        <section id="galeria" class="galeria">
+            <div class="section-header">
+                <span class="eyebrow">Momentos</span>
+                <h2>Galería</h2>
+            </div>
+            <div class="galeria-grid">
+                <img src="images/galeria-1.jpg" alt="Jineteada en el rodeo de El Palmar Chico">
+                <img src="images/galeria-2.jpg" alt="Familia chaqueña en la tradición">
+                <img src="images/galeria-3.jpg" alt="Paisaje del Chaco boliviano">
+                <img src="images/galeria-4.jpg" alt="Comida típica chaqueña">
+            </div>
+        </section>
+
+        <!-- UBICACIÓN -->
+        <section id="ubicacion" class="ubicacion">
+            <div class="section-header">
+                <span class="eyebrow">Cómo llegar</span>
+                <h2>Ubicación</h2>
+            </div>
+            <p>El Palmar Chico, Yacuiba, Tarija - Bolivia</p>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Mi Página Web. Todos los derechos reservados.</p>
+    <footer class="site-footer">
+        <p>&copy; 2026 Tradición Chaqueña — El Palmar Chico, Yacuiba, Tarija, Bolivia.</p>
     </footer>
 
 </body>
